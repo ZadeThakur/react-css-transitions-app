@@ -1,0 +1,238 @@
+#topDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#fade{
+  background-color:
+}
+.div{
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  border: solid red 1px;
+  position: relative;
+  border-radius: 25px;
+  text-align: center;
+}
+
+#child{
+  line-height: 120px;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.fade-in{
+  animation: fadeIn 2s ease-in-out 0s 1;
+  animation-fill-mode: forwards;
+}
+
+.fade-out{
+  animation: fadeOut 2s ease-in-out 0s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0%{
+      opacity: 100;
+    }
+    100%{
+      opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 100;
+    }
+}
+
+.slide-out{
+  animation: slideOut 2s ease-in-out 0s 1;
+  animation-fill-mode: forwards;
+}
+
+.slide-in{
+  animation: slideIn 2s ease-in-out 0s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideOut{
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(100%);
+    opacity:  0;
+  }
+}
+
+@keyframes slideIn {
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+.slide-up{
+  animation: slideUp 2s ease-in-out 0s 1;
+  animation-fill-mode: forwards;
+}
+
+.slide-down{
+  animation: slideDown 2s ease-in-out 0s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideUp {
+  0%{
+    transform: translateY(0%);
+  }
+  100%{
+    transform: translateY(-200%);
+    opacity:0;
+  }
+}
+
+@keyframes slideDown {
+  0%{
+    transform: translateY(-200%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
+
+.slide-bottom-corner{
+  animation: slideBottomCorner 2s ease-in-out 0s 1;
+  animation-fill-mode: forwards;
+}
+
+.slide-upper-corner{
+  animation: slideUpperCorner 2s ease-in-out 0s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideBottomCorner {
+  0%{
+    transform:translate(0%,0%);
+  }
+  100%{
+    transform: translate(-200%,200%);
+    opacity:0;
+  }
+}
+
+@keyframes slideUpperCorner {
+  0%{
+    transform: translate(-200%,-200%);
+  }
+  100%{
+    transform: translate(0%,0%);
+  }
+}
+
+.squeeze-in{
+  animation: squeezeIn 2s ease-in-out 0s 1;
+  animation-fill-mode: forwards;
+}
+
+.squeeze-out{
+  animation: squeezeOut 2s ease-in-out 0s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes squeezeIn {
+  0%{
+    opacity: 100;
+  }
+  100%{
+    width:0px;
+    opacity:0;
+  }
+}
+
+@keyframes squeezeOut {
+  0%{
+    width: 0px;
+    opacity: 0;
+  }
+  100%{
+    width:150px;
+    opacity: 100;
+  }
+}
+
+.contracts{
+  animation: contracts 2s ease-in-out 0s 1;
+  animation-fill-mode: forwards;
+}
+
+.expands{
+  animation: expands 2s ease-in-out 0s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes contracts {
+  0%{
+    top:0px;
+    opacity: 100;
+  }
+  100%{
+
+    top:50px;
+    height:0px;
+    width:0px;
+    opacity:0;
+  }
+}
+
+@keyframes expands {
+  0%{
+    width: 0px;
+    height:0px;
+    opacity: 0;
+    top:50px;
+  }
+  100%{
+    width:150px;
+    height: 150px;
+    opacity: 100;
+    top:0px
+  }
+}
+
+.rotating-clock{
+  animation: rotatingClockwise 2s ease-in-out 0s 1;
+  animation-fill-mode: forwards;
+}
+
+.rotating-counter-clock{
+  animation: rotatingCounterClockwise 2s ease-in-out 0s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotatingClockwise {
+  0%{
+    opacity: 100;
+  }
+  100%{
+    transform: rotate(720deg);
+    opacity:0;
+  }
+}
+
+@keyframes rotatingCounterClockwise {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    transform: rotate(-720deg);
+    opacity: 100;
+  }
+}

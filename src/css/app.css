@@ -1,0 +1,30 @@
+body{
+  background: linear-gradient(-45deg, #e2c48b, 	#f6ecc8, #e7cac9, #f3bfb2);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
+#animations-menu{
+  margin-top: 5%;
+}
+#divs{
+  margin-top: 5%;
+}
+.ui.container{
+  font-style: italic;
+  padding-top: 2%;
+  text-align: center;
+}
